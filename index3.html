@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles2.css" />
+    <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+    <title>Mohamed Jameel's Collection - Premium Store</title>
+  </head>
+  <body>
+
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-content">
+        <div class="headerinner">
+          <nav class="nav-links">
+            <a href="#" class="nav-item">Home</a>
+            <a href="#" class="nav-item">Filter</a>
+            <a href="#" class="nav-item">Contact</a>
+          </nav>
+        </div>
+
+        <ul class="social-links">
+          <li>
+            <a
+              href="https://youtube.com/sixstartupsinsixmonths"
+              aria-label="YouTube"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 
+                         12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 
+                         2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 
+                         5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 
+                         8.6.46 8.6.46s6.88 0 8.6-.46a2.78 
+                         2.78 0 0 0 1.94-2 29 29 0 0 0 
+                         .46-5.25 29 29 0 0 0-.46-5.33z"
+                ></path>
+                <polygon
+                  points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"
+                ></polygon>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://instagram.com/sixstartupsinsixmonths"
+              aria-label="Instagram"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1 1 12.63 8 
+                         4 4 0 0 1 16 11.37z"
+                ></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="topbar">
+        <div class="topbar-left">
+          <div class="hamburger" id="hamburger">&#9776;</div>
+          <img src="logo_1.png" class="logo-small" />
+          <h2 class="store-title">Mohamed Jameel's Collection</h2>
+        </div>
+        <div class="topbar-right">
+          <div class="searchtab">
+            <span class="search-icon"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="#ffa05b"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></span>
+            <input type="text" id="searchInput" placeholder="Search products..." />
+          </div>
+          <div class="nav-icons">
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="product-grid">
+        <div class="product-card" data-product-id="1" data-youtube-id="example1">
+          <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRqgRpENE6jSSRH0wPcXkiKb6sYMAxrd9mPZwPvoJhWDG-vIXbTZ_0l-v0zw8Wcx_c4NNP7PwTJwYiqLexbJSli_oTinnptZKIayqhSrJfuTuXjOzAYw4dTEg" alt="Product 1" />
+          <span class="product-grid-price">$129.99</span>
+        </div>
+        <div class="product-card" data-product-id="2" data-youtube-id="example2">
+          <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRqgRpENE6jSSRH0wPcXkiKb6sYMAxrd9mPZwPvoJhWDG-vIXbTZ_0l-v0zw8Wcx_c4NNP7PwTJwYiqLexbJSli_oTinnptZKIayqhSrJfuTuXjOzAYw4dTEg" alt="Product 2" />
+          <span class="product-grid-price">$149.99</span>
+        </div>
+        <div class="product-card" data-product-id="3" data-youtube-id="example3">
+          <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRqgRpENE6jSSRH0wPcXkiKb6sYMAxrd9mPZwPvoJhWDG-vIXbTZ_0l-v0zw8Wcx_c4NNP7PwTJwYiqLexbJSli_oTinnptZKIayqhSrJfuTuXjOzAYw4dTEg" alt="Product 3" />
+          <span class="product-grid-price">$189.99</span>
+        </div>
+        <div class="product-card" data-product-id="4" data-youtube-id="example4">
+          <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRqgRpENE6jSSRH0wPcXkiKb6sYMAxrd9mPZwPvoJhWDG-vIXbTZ_0l-v0zw8Wcx_c4NNP7PwTJwYiqLexbJSli_oTinnptZKIayqhSrJfuTuXjOzAYw4dTEg" alt="Product 4" />
+          <span class="product-grid-price">$169.99</span>
+        </div>
+      </div>
+
+      <div class="product-modal" id="productModal">
+        <div class="modal-content">
+          <button class="close-modal">&times;</button>
+          <div class="product-details">
+            <img class="product-image" id="modalImage" src="" alt="Product Image">
+            <div class="product-info">
+              <h2 class="product-title" id="modalTitle">Product Title</h2>
+              <p class="product-price" id="modalPrice">$99.99</p>
+              <p class="product-description" id="modalDescription">
+                Product description will be displayed here. It includes all the important details about the product.
+              </p>
+            </div>
+          </div>
+          <div class="youtube-review" id="youtubeReview">
+          </div>
+        </div>
+      </div>
+
+      <div class="foot">
+        <p>© 2023 Mohamed Jameel</p>
+      </div>
+    </div>
+
+    <script>
+      const sidebar = document.getElementById("sidebar");
+      const hamburger = document.getElementById("hamburger");
+      const topbar = document.querySelector(".topbar");
+      const productModal = document.getElementById("productModal");
+      const closeModal = document.querySelector(".close-modal");
+      const productCards = document.querySelectorAll(".product-card");
+      const products = {
+        "1": {
+          title: "Premium Product 1",
+          price: "$129.99",
+          description: "This is a premium quality product with excellent features. Made with high-quality materials and designed for durability.",
+          image: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRqgRpENE6jSSRH0wPcXkiKb6sYMAxrd9mPZwPvoJhWDG-vIXbTZ_0l-v0zw8Wcx_c4NNP7PwTJwYiqLexbJSli_oTinnptZKIayqhSrJfuTuXjOzAYw4dTEg",
+          youtubeId: "example1"
+        },
+        "2": {
+          title: "Premium Product 2",
+          price: "$149.99",
+          description: "Another fantastic product from our premium collection. Features superior craftsmanship and modern design.",
+          image: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRqgRpENE6jSSRH0wPcXkiKb6sYMAxrd9mPZwPvoJhWDG-vIXbTZ_0l-v0zw8Wcx_c4NNP7PwTJwYiqLexbJSli_oTinnptZKIayqhSrJfuTuXjOzAYw4dTEg",
+          youtubeId: "example2"
+        },
+        "3": {
+          title: "Premium Product 3",
+          price: "$189.99",
+          description: "Top-of-the-line product with exceptional quality and innovative features. Perfect for those who demand the best.",
+          image: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRqgRpENE6jSSRH0wPcXkiKb6sYMAxrd9mPZwPvoJhWDG-vIXbTZ_0l-v0zw8Wcx_c4NNP7PwTJwYiqLexbJSli_oTinnptZKIayqhSrJfuTuXjOzAYw4dTEg",
+          youtubeId: "example3"
+        },
+        "4": {
+          title: "Premium Product 4",
+          price: "$169.99",
+          description: "A premium product that combines style with functionality. Built to last and designed for maximum satisfaction.",
+          image: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRqgRpENE6jSSRH0wPcXkiKb6sYMAxrd9mPZwPvoJhWDG-vIXbTZ_0l-v0zw8Wcx_c4NNP7PwTJwYiqLexbJSli_oTinnptZKIayqhSrJfuTuXjOzAYw4dTEg",
+          youtubeId: "example4"
+        }
+      };
+
+
+      hamburger.addEventListener("mouseenter", () => {
+        sidebar.classList.add("active");
+        hamburger.style.opacity = "0";
+      });
+
+      sidebar.addEventListener("mouseleave", () => {
+        sidebar.classList.remove("active");
+        hamburger.style.opacity = "1";
+      });
+
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 10) {
+          topbar.classList.add("scrolled");
+        } else {
+          topbar.classList.remove("scrolled");
+        }
+      });
+
+      function openProductModal(productId) {
+        const product = products[productId];
+        if (!product) return;
+
+        document.getElementById("modalImage").src = product.image;
+        document.getElementById("modalTitle").textContent = product.title;
+        document.getElementById("modalPrice").textContent = product.price;
+        document.getElementById("modalDescription").textContent = product.description;
+        
+        const youtubeContainer = document.getElementById("youtubeReview");
+        youtubeContainer.innerHTML = `
+          <iframe
+            src="https://www.youtube.com/embed/${product.youtubeId}"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        `;
+
+        productModal.classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeProductModal() {
+        productModal.classList.remove("active");
+        document.body.style.overflow = "";
+        document.getElementById("youtubeReview").innerHTML = "";
+      }
+
+      productCards.forEach(card => {
+        card.addEventListener("click", () => {
+          const productId = card.getAttribute("data-product-id");
+          openProductModal(productId);
+        });
+      });
+
+    
+      closeModal.addEventListener("click", closeProductModal);
+      productModal.addEventListener("click", (e) => {
+        if (e.target === productModal) {
+          closeProductModal();
+        }
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && productModal.classList.contains("active")) {
+          closeProductModal();
+        }
+      });
+    </script>
+  </body>
+</html>
